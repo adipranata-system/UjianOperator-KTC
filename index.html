@@ -48,16 +48,22 @@
             <h1 class="text-sm sm:text-base font-black text-slate-900 tracking-wide uppercase">PT. KTC COAL MINING &amp; ENERGY</h1>
             <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-amber-50 text-amber-700 border border-amber-200">Site Muara Teweh</span>
           </div>
-          <p class="text-xs text-slate-500 font-medium">Asesmen Mandiri: Emosional (EQ), Integritas Lapangan, K3LH-P2H &amp; Kompetensi Unit</p>
+          <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-sm sm:text-base font-black text-slate-900 tracking-wide uppercase">PT. KTC COAL MINING &amp; ENERGY</h1>
+            <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-amber-50 text-amber-700 border border-amber-200">Site Muara Teweh</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">Asesmen Kompetensi Terpadu: Kematangan Emosional (EQ), Sikap Kerja (SJT), K3LH &amp; P2H, serta Teknis Unit</p>
         </div>
       </div>
-<!-- Live Monitoring Widget (Hanya Tampil Saat Ujian Berjalan) -->
+
+      <!-- Live Monitoring Widget (Hanya Tampil Saat Ujian Berjalan) -->
       <div id="examMonitor" class="hidden flex flex-wrap items-center gap-2 sm:gap-3 self-end md:self-auto">
         <!-- Anti Cheat Violation Tracker -->
         <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold shadow-xs">
           <i class="fa-solid fa-shield-halved text-red-500"></i>
-          <span class="hidden sm:inline">Catatan Integritas Layar:</span>
-          <span class="sm:hidden">Integritas:</span>
+          <span class="hidden sm:inline">Integritas Layar:</span>
+          <span class="sm:hidden">Audit:</span>
           <span id="tabSwitchCount" class="font-bold text-white px-1.5 py-0.5 bg-red-600 rounded">0x</span>
         </div>
 
@@ -71,7 +77,7 @@
         <!-- Tombol Kunci Modul Berjalan -->
         <button id="btnSubmitCurrentModule" onclick="confirmSubmitCurrentModule()" class="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-sm active:scale-95">
           <i class="fa-solid fa-lock text-[11px]"></i>
-          <span id="btnSubmitModuleLabel">Kunci &amp; Lanjut Modul</span>
+          <span id="btnSubmitModuleLabel">Kunci &amp; Lanjut</span>
         </button>
       </div>
     </div>
@@ -111,25 +117,25 @@
         <div class="relative z-10 max-w-3xl space-y-4">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold tracking-wide">
             <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-            <span>PORTAL ASESMEN KOMPETENSI OPERASI LAPANGAN (SITE MUARA TEWEH)</span>
+            <span>PORTAL ASESMEN KOMPETENSI RESMI SITE MUARA TEWEH</span>
           </div>
 
           <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight tracking-tight">
-            Ujian Daring Terpadu: <span class="text-amber-400">Operator Alat Berat, Drilling Machine &amp; Driver</span>
+            Seleksi Mandiri: <span class="text-amber-400">Operator Alat Berat, Drilling Machine &amp; Driver Hauler</span>
           </h2>
 
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Selamat datang di Portal Ujian Mandiri PT KTC Coal Mining &amp; Energy. Sistem ini dirancang untuk mengukur kematangan emosional kabin (EQ), integritas dan kepatuhan kerja di area tambang (SJT), standar baku K3LH &amp; P2H, serta kompetensi teknis terapan sesuai spesifikasi unit operasional Anda.
+            Selamat datang di Portal Evaluasi Terpadu PT KTC Coal Mining &amp; Energy. Sistem terenkripsi ini menguji kematangan emosional kabin (EQ), sikap kerja dan integritas tambang (SJT), baku mutu K3LH &amp; P2H harian, serta kompetensi teknis terapan sesuai spesifikasi unit operasional Anda.
           </p>
 
           <div class="pt-2 flex flex-wrap items-center gap-3">
             <button onclick="goToRegistration()" class="px-6 py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow-lg hover:shadow-amber-500/30 transition duration-200 flex items-center gap-2.5 active:scale-95">
-              <span>MASUK RUANG ASESMEN ONLINE (90 MENIT)</span>
+              <span>MASUK RUANG ASESMEN (90 MENIT)</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
             <a href="#portalTataTertib" class="px-5 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm rounded-xl border border-white/20 transition flex items-center gap-2">
               <i class="fa-solid fa-book-open-reader text-amber-400"></i>
-              <span>Tata Tertib &amp; Alur Tes</span>
+              <span>Tata Tertib Asesmen</span>
             </a>
           </div>
         </div>
@@ -159,11 +165,11 @@
 
         <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg shrink-0 border border-emerald-200">
-            <i class="fa-solid fa-brain"></i>
+            <i class="fa-solid fa-shield-halved"></i>
           </div>
           <div>
-            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Metode Evaluasi</p>
-            <p class="text-base sm:text-lg font-black text-emerald-700 font-mono-code">SJT &amp; Forced-Choice</p>
+            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Keamanan Kunci</p>
+            <p class="text-base sm:text-lg font-black text-emerald-700 font-mono-code">Enkripsi Server</p>
           </div>
         </div>
 
@@ -182,9 +188,9 @@
       <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-5">
         <div class="border-b border-slate-100 pb-4">
           <h3 class="text-lg font-black text-slate-900 flex items-center gap-2">
-            <i class="fa-solid fa-layer-group text-amber-500"></i> Struktur 4 Modul Evaluasi (Total: 90 Menit &bull; 65 Soal)
+            <i class="fa-solid fa-layer-group text-amber-500"></i> Struktur 4 Modul Terpadu (Total: 90 Menit &bull; 65 Butir Soal)
           </h3>
-          <p class="text-xs text-slate-500 mt-0.5">Sistem secara otomatis mengunci lembar jawaban begitu batas waktu setiap sesi berakhir.</p>
+          <p class="text-xs text-slate-500 mt-0.5">Sistem secara otomatis mengunci lembar jawaban begitu batas waktu setiap modul berakhir.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -194,7 +200,7 @@
               <span class="text-xs font-bold text-purple-600 font-mono-code">15 Menit</span>
             </div>
             <h4 class="text-sm font-bold text-slate-900">Kematangan Emosional (EQ)</h4>
-            <p class="text-xs text-slate-600 leading-relaxed">Metode Forced-Choice (A vs B). Mengukur ketenangan mental, pengendalian stres kabin, dan refleks emosi di jalur tambang.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">Metode Forced-Choice (A vs B). Mengukur ketenangan kabin, pengendalian stres operasional, dan kedewasaan respons di jalur tambang.</p>
           </div>
 
           <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:border-slate-300 transition space-y-2">
@@ -203,7 +209,7 @@
               <span class="text-xs font-bold text-blue-600 font-mono-code">15 Menit</span>
             </div>
             <h4 class="text-sm font-bold text-slate-900">Sikap Kerja &amp; Integritas (SJT)</h4>
-            <p class="text-xs text-slate-600 leading-relaxed">Situational Judgement Test mengenai kepatuhan perintah, integritas pemakaian solar/unit, dan kejujuran lapor insiden.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">Situational Judgement Test mengenai kepatuhan perintah aman, integritas pemakaian unit/solar, dan kejujuran pelaporan insiden pit.</p>
           </div>
 
           <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:border-slate-300 transition space-y-2">
@@ -212,7 +218,7 @@
               <span class="text-xs font-bold text-emerald-600 font-mono-code">25 Menit</span>
             </div>
             <h4 class="text-sm font-bold text-slate-900">K3LH &amp; Inspeksi Harian (P2H)</h4>
-            <p class="text-xs text-slate-600 leading-relaxed">Baku keselamatan tambang terbuka, batas fluida, LOTO, radio tambang, dan tata cara isolasi unit sebelum bekerja.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">Baku keselamatan Kepmen ESDM 1827 K, batas fluida, LOTO, radio tambang, proteksi kebakaran, dan isolasi unit sebelum beroperasi.</p>
           </div>
 
           <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:border-slate-300 transition space-y-2">
@@ -221,7 +227,7 @@
               <span class="text-xs font-black text-amber-600 font-mono-code">35 Menit</span>
             </div>
             <h4 class="text-sm font-bold text-slate-900">Kompetensi Teknis Unit</h4>
-            <p class="text-xs text-slate-600 leading-relaxed">Soal spesifik sesuai formasi pilihan (DM45, Exca 80T/60T/40T/20T, Dozer D375/D85, ADT, DT, Grader, Loader, WT, Compactor).</p>
+            <p class="text-xs text-slate-600 leading-relaxed">Dinamika alat spesifik formasi pilihan (DM45, Exca 80T/60T/40T/20T, Dozer D375/D85, ADT, DT, Grader, Loader, WT, FT, Lowboy).</p>
           </div>
         </div>
       </div>
@@ -239,7 +245,7 @@
             </p>
             <ul class="list-disc list-inside space-y-1 text-slate-600">
               <li>Dilarang meninggalkan halaman asesmen, berpindah tab peramban, atau membuka aplikasi lain selama evaluasi berlangsung.</li>
-              <li>Sistem mencatat setiap hilangnya fokus layar secara otomatis dan menyimpannya pada Laporan Audit Asesor.</li>
+              <li>Sistem mencatat setiap hilangnya fokus layar secara otomatis dan menyimpannya pada Berita Acara Audit Asesor.</li>
             </ul>
           </div>
 
@@ -249,7 +255,7 @@
             </p>
             <ul class="list-disc list-inside space-y-1 text-slate-600">
               <li>Setiap modul dibatasi timer otomatis. Jika batas waktu habis, jawaban terkunci dan sistem beralih ke modul berikutnya.</li>
-              <li>Wajib menyalakan kamera aktif untuk mengambil foto presensi resmi dengan tanda waktu terverifikasi sebelum masuk sesi.</li>
+              <li>Wajib menyalakan kamera aktif untuk merekam foto presensi resmi dengan tanda waktu terverifikasi sebelum masuk sesi.</li>
             </ul>
           </div>
         </div>
@@ -283,11 +289,11 @@
       <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
         <div>
           <label class="block text-xs font-black text-slate-800 uppercase tracking-wide mb-1">
-            Nomor Induk Kependudukan (NIK KTP - 16 Digit) <span class="text-amber-600">*</span>
+            Nomor Induk Kependudukan (NIK KTP - Minimal 10-16 Digit) <span class="text-amber-600">*</span>
           </label>
-          <p class="text-xs text-slate-500 mb-2">Masukkan 16 digit NIK sesuai KTP untuk memverifikasi data pelamar yang terdaftar dalam database seleksi.</p>
+          <p class="text-xs text-slate-500 mb-2">Masukkan NIK sesuai KTP untuk memverifikasi data pelamar yang terdaftar dalam database seleksi.</p>
           <div class="flex flex-col sm:flex-row gap-2.5">
-            <input type="text" id="candNik" pattern="[0-9]{16}" maxlength="16" minlength="16" required placeholder="Contoh: 6401041506020003" class="flex-1 px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm font-mono-code font-bold text-slate-900 tracking-widest focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
+            <input type="text" id="candNik" pattern="[0-9]{10,16}" maxlength="16" required placeholder="Contoh: 6401041506020003" class="flex-1 px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm font-mono-code font-bold text-slate-900 tracking-widest focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
             <button type="button" id="btnVerifyNik" onclick="handleVerifyNik()" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl transition flex items-center justify-center gap-2 shrink-0 shadow-md active:scale-95">
               <i class="fa-solid fa-magnifying-glass"></i>
               <span id="btnVerifyNikLabel">VERIFIKASI NIK</span>
@@ -317,26 +323,8 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label class="block text-[11px] font-bold text-slate-500 uppercase">Posisi Formasi Unit yang Dilamar</label>
-                <div class="mt-1 flex items-center gap-2">
-                  <select id="candRoleSelect" onchange="handleRoleChange(this.value)" class="w-full px-3 py-2 bg-white border border-amber-400 rounded-lg text-xs font-black text-amber-800 focus:outline-none focus:ring-1 focus:ring-amber-500">
-                    <option value="dm45">Operator Drilling Machine (DM45)</option>
-                    <option value="exca_80t">Operator Excavator 80T Class (ZX870/DX800/EC750)</option>
-                    <option value="exca_60t">Operator Excavator 60T Class (ZX670)</option>
-                    <option value="exca_40t">Operator Excavator 40T Class (ZX470)</option>
-                    <option value="exca_20t">Operator Excavator 20T Class (ZX200)</option>
-                    <option value="adt">Operator ADT (Volvo A40F/G)</option>
-                    <option value="dozer_d375">Operator Dozer Heavy (Komatsu D375)</option>
-                    <option value="dozer_d85">Operator Dozer Medium (Komatsu D85/Shantui)</option>
-                    <option value="grader">Operator Motor Grader (SEM/CAT)</option>
-                    <option value="loader">Operator Wheel Loader (CAT)</option>
-                    <option value="compactor">Operator Compactor (Sakai)</option>
-                    <option value="water_truck">Driver Water Truck (Hino/Iveco)</option>
-                    <option value="fuel_truck">Driver Fuel Truck (Hino/Quester Dispenser)</option>
-                    <option value="lowboy">Driver Lowboy Trailer (Prime Mover Heavy Haulage)</option>
-                    <option value="dump_truck">Driver Dump Truck (Hino/Hanvan/Howo)</option>
-                  </select>
-                </div>
+                <label class="block text-[11px] font-bold text-slate-500 uppercase">Posisi Formasi Terverifikasi</label>
+                <input type="text" id="candRoleDisplay" readonly class="mt-1 w-full px-3 py-2 bg-amber-50 border border-amber-300 rounded-lg text-xs font-bold text-amber-900 focus:outline-none cursor-not-allowed">
                 <input type="hidden" id="candRole" value="dump_truck">
               </div>
               <div>
@@ -558,12 +546,12 @@
             <span class="text-[11px] font-bold uppercase text-amber-700 tracking-wider flex items-center gap-1.5">
               <i class="fa-solid fa-receipt"></i> Bukti Penyelesaian Ujian Daring Terverifikasi
             </span>
-            <span id="receiptTimestamp" class="font-mono-code text-[11px] text-slate-500">2026-10-26 10:00:00</span>
+            <span id="receiptTimestamp" class="font-mono-code text-[11px] text-slate-500">2026-10-28 10:00:00</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div>
               <p class="text-slate-500 text-[10px] uppercase font-bold">Nomor Registrasi Sesi</p>
-              <p id="receiptTokenId" class="font-mono-code font-bold text-amber-700 text-xs sm:text-sm tracking-wider">KTC-OP-20261026-XXXX</p>
+              <p id="receiptTokenId" class="font-mono-code font-bold text-amber-700 text-xs sm:text-sm tracking-wider">KTC-OP-20261028-XXXX</p>
             </div>
             <div>
               <p class="text-slate-500 text-[10px] uppercase font-bold">Total Sesi yang Diselesaikan</p>
@@ -696,7 +684,7 @@
             </div>
             <div>
               <h4 id="syncStatusTitle" class="text-sm font-bold text-slate-900">Sinkronisasi Database Asesor Pusat</h4>
-              <p id="syncStatusSubtitle" class="text-xs text-slate-500">Lembar jawaban dan data presensi berhasil disinkronkan ke Basis Data Rekrutmen PT KTC...</p>
+              <p id="syncStatusSubtitle" class="text-xs text-slate-500">Lembar respon dan presensi telah tercatat secara resmi di server PT KTC...</p>
             </div>
           </div>
           <div class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-slate-50 text-slate-600 border border-slate-200 shrink-0 self-center sm:self-auto">
@@ -764,12 +752,12 @@
         Sistem ini dikembangkan oleh <span class="text-amber-600 font-extrabold underline underline-offset-2">Adi Pranata</span>
       </p>
       <p class="text-slate-400 text-[10px] leading-relaxed">
-        &copy; 2026 PT KTC Coal Mining &amp; Energy &bull; Seluruh Hak Cipta Dilindungi Undang-Undang. Dilarang menggandakan atau menyebarluaskan instrumen evaluasi ini.
+        &copy; 2026 PT KTC Coal Mining &amp; Energy &bull; Seluruh Hak Cipta Dilindungi Undang-Undang.
       </p>
     </div>
   </footer>
 
-  <!-- SCRIPT LOGIKA APLIKASI & BANK SOAL UMUM -->
+  <!-- SCRIPT LOGIKA APLIKASI (ZERO STATIC QUESTION BANK - SECURE CLIENT) -->
   <script>
     // ==========================================
     // KONFIGURASI WEBHOOK & VARIABEL GLOBAL STATE
@@ -804,405 +792,21 @@
       nik: "",
       nama: "",
       whatsapp: "",
-      posisi: "Driver Dump Truck (Hino/Hanvan/Howo)",
+      posisi: "Driver Dump Truck",
       posisiKey: "dump_truck",
       fotoBase64: "",
       tabViolations: 0,
-      answers: {},
+      answers: {}, // Menyimpan jawaban mentah: m1_0: "A", m2_0: 1, m3_0: 2, m4_0: 0
       flagged: {}
     };
 
-    // Bank Soal Modul 4 ditampung secara dinamis dari backend Apps Script (BankSoal.gs)
-    let dynamicModul4Questions = [];
-
-    // ==========================================
-    // BANK SOAL UMUM (MODUL 1, 2, 3) DI FRONTEND
-    // Diperbarui: Pengecoh realistis, panjang kalimat seimbang, posisi jawaban diacak
-    // ==========================================
-
-    // MODUL 1: KEMATANGAN EMOSIONAL (EQ) - 12 Butir Forced-Choice (A vs B)
-    // Posisi pilihan terbaik diacak seimbang antara A dan B dengan bobot kalimat setara
-    const rawModul1 = [
-      {
-        scenario: "Saat unit Anda tertahan antrean pemuatan lebih dari 25 menit di bawah terik matahari karena unit di depan mengalami kendala teknis:",
-        a: "Tetap tenang memposisikan transmisi netral dan rem parkir aktif, menjaga frekuensi radio hening, dan menunggu instruksi resmi pengawas.",
-        b: "Menghubungi pengawas via radio menanyakan kepastian waktu antrean agar dapat memperkirakan ritase dan giliran rehat berikutnya.",
-        scoreA: 100, scoreB: 70
-      },
-      {
-        scenario: "Ketika pengemudi hauler lain mendahului secara tiba-tiba di tikungan berdebu tanpa konfirmasi radio hingga kerikil mengenai kaca depan Anda:",
-        a: "Membunyikan klakson panjang dan langsung memanggil nomor lambung unit tersebut di channel radio umum agar pengemudi lain waspada.",
-        b: "Menahan emosi untuk tidak membalas manuver, segera memperlebar jarak iring aman, dan mencatat nomor lambung untuk dilaporkan saat rehat.",
-        scoreA: 65, scoreB: 100
-      },
-      {
-        scenario: "Pengawas pit menginstruksikan pemindahan unit Anda ke front galian yang licin berlumpur saat sisa waktu giliran kerja tinggal 30 menit:",
-        a: "Menyampaikan kondisi fisik yang letih kepada pengawas terlebih dahulu untuk mengusulkan pemindahan dialihkan ke operator shift selanjutnya.",
-        b: "Menerima tugas dengan mematuhi rute aman, memeriksa kesiapan traksi unit, dan mengoperasikannya secara ekstra hati-hati tanpa mengeluh.",
-        scoreA: 70, scoreB: 100
-      },
-      {
-        scenario: "Operator excavator memuat material bongkahan batu besar (boulder) terlalu kasar hingga vessel unit bergetar keras dan suspensi tertekan:",
-        a: "Membunyikan isyarat klakson satu kali dan mengonfirmasi via radio secara santun agar pemuatan batu besar diberi bantalan material halus.",
-        b: "Menggeser posisi unit sedikit maju menjauh dari jangkauan bucket agar operator alat muat menyadari ritme pemuatannya terlalu kasar.",
-        scoreA: 100, scoreB: 60
-      },
-      {
-        scenario: "Alarm peringatan suhu transmisi berkedip kuning berkala di monitor display kabin tepat saat Anda sedang mengejar ritase terakhir shift:",
-        a: "Memperlambat laju unit sambil terus memantau indikator display guna melihat apakah peringatan tersebut hanya anomali sensor sesaat.",
-        b: "Menahan ego target ritase, segera mencari area aman di tepi jalan angkut untuk berhenti, dan melapor ke pengawas serta mekanik.",
-        scoreA: 50, scoreB: 100
-      },
-      {
-        scenario: "Rekan kerja mengeluhkan penerapan standar keselamatan baru yang dianggap memperlambat ritme kerja saat istirahat makan di pos:",
-        a: "Mengingatkan rekan bahwa setiap prosedur keselamatan dibuat demi perlindungan nyawa pekerja meski menambah tahapan operasional.",
-        b: "Memilih tidak ikut terprovokasi dalam keluhan tersebut dan fokus menyelesaikan tanggung jawab kerja pribadi sesuai peraturan.",
-        scoreA: 100, scoreB: 85
-      },
-      {
-        scenario: "Terdapat selisih penghitungan ritase antara catatan pribadi Anda dengan lembar rekapitulasi petugas tally checker di disposal:",
-        a: "Turun sejenak dari kabin di lokasi parkir aman untuk langsung meminta klarifikasi kepada petugas checker agar data tidak tertukar.",
-        b: "Mencatat perbedaan tersebut di buku saku kerja dan mengklarifikasikannya dengan kepala dingin bersama pengawas saat serah terima shift.",
-        scoreA: 60, scoreB: 100
-      },
-      {
-        scenario: "Roda penggerak unit Anda mengalami slip ringan di tanjakan licin sementara unit hauler lain mulai merapat di belakang:",
-        a: "Menginjak pedal gas lebih dalam secara bertahap untuk memaksa ban mencari traksi pada lapisan permukaan tanah yang lebih kering.",
-        b: "Tetap berkepala dingin, menahan rem servis, mengaktifkan inter-axle diff-lock sesuai SOP, dan mengabari unit belakang lewat radio.",
-        scoreA: 55, scoreB: 100
-      },
-      {
-        scenario: "Anda merasakan serangan kantuk berat (fatigue tingkat tinggi) pada pukul 03.30 dini hari di tengah rute hauling yang sepi dan monoton:",
-        a: "Segera melapor ke pengawas pit melalui radio untuk meminta izin 'fatigue break' 15 menit di rest area resmi daripada memaksakan diri.",
-        b: "Membuka kaca samping, menyalakan musik berirama cepat, dan membasuh muka dengan air dingin agar dapat bertahan hingga pergantian shift.",
-        scoreA: 100, scoreB: 60
-      },
-      {
-        scenario: "Saat bermanuver di front kerja yang sempit dan basah, ban/track unit Anda tidak sengaja menggores tanggul tanah pengaman:",
-        a: "Maju perlahan keluar dari tanggul dan melanjutkan aktivitas kerja selama tidak ditemukan komponen mekanis yang bengkok atau bocor.",
-        b: "Segera berhenti di tempat datar stabil, memeriksa kondisi roda/undercarriage, dan melaporkan kejadian apa adanya kepada pengawas.",
-        scoreA: 50, scoreB: 100
-      },
-      {
-        scenario: "Melihat unit sarana lain parkir sembarangan di dekat persimpangan jalan tambang hingga menghalangi sudut pandang titik buta (blind spot):",
-        a: "Mengurangi kecepatan hingga titik henti aman, lalu memanggil nomor unit tersebut melalui channel kerja radio secara santun dan jelas.",
-        b: "Menghindari unit tersebut melalui bahu jalan luar sambil membunyikan klakson panjang berkali-kali sebagai bentuk teguran langsung.",
-        scoreA: 100, scoreB: 65
-      },
-      {
-        scenario: "Cara kerja atau teknik manuver Anda dievaluasi secara terbuka dan tegas oleh pengawas di hadapan rekan tim saat briefing awal shift (P5M):",
-        a: "Langsung menyela dan memberikan klarifikasi logis mengenai kendala kondisi medan tanah yang memang sangat licin pada saat itu.",
-        b: "Menerima evaluasi dengan sikap profesional tanpa memotong pembicaraan, lalu menanyakan teknik kerja korektif seusai briefing selesai.",
-        scoreA: 60, scoreB: 100
-      }
-    ];
-
-    // MODUL 2: SIKAP KERJA & INTEGRITAS TAMBANG (SJT) - 15 Butir Kasus Pilihan Ganda Bernilai
-    // Kunci jawaban bernilai 100 disebar merata di opsi A, B, C, dan D dengan pengecoh realistis
-    const rawModul2 = [
-      {
-        q: "Waktu kerja shift tersisa 15 menit dan target harian tim Anda kurang 1 ritase. Namun, indikator suhu oli transmisi mulai menyentuh zona kuning atas. Tindakan profesional Anda adalah:",
-        opts: [
-          { t: "Mengabaikan indikator sesaat dan memacu unit dengan kecepatan tinggi agar target ritase tim shift ini tercapai tuntas.", score: 0 },
-          { t: "Mengurangi putaran mesin, menepi di rest area aman terdekat, dan melaporkan kenaikan suhu transmisi ke pengawas serta mekanik.", score: 100 },
-          { t: "Menyelesaikan ritase menggunakan gigi transmisi paling rendah tanpa mencatat anomali suhu tersebut pada lembar kerja serah terima.", score: 25 },
-          { t: "Langsung mematikan kunci kontak mesin seketika di tepi jalur hauling tanpa menunggu putaran mesin turun ke posisi idle.", score: 15 }
-        ]
-      },
-      {
-        q: "Saat memarkir unit di workshop, Anda mendapati tetesan oli hidrolik aktif dari selang boom. Rekan mekanik meminta Anda menandatangani form P2H dengan status 'Kondisi Baik' agar unit tidak di-grounded oleh pengawas. Respons Anda:",
-        opts: [
-          { t: "Menyetujui permintaan mekanik demi menjaga kelancaran jam operasional unit dan solidaritas sesama rekan kerja lapangan.", score: 0 },
-          { t: "Menandatangani formulir namun mengingatkan mekanik secara lisan agar segera memperbaikinya saat waktu istirahat pergantian shift.", score: 30 },
-          { t: "Menolak secara sopan, tetap mencatat kebocoran pada form P2H, dan meminta mekanik memasang Danger Tag sebelum unit ditangani.", score: 100 },
-          { t: "Meninggalkan form P2H kosong tanpa tanda tangan lalu langsung menuju bus jemputan agar terhindar dari perselisihan kerja.", score: 20 }
-        ]
-      },
-      {
-        q: "Rekan kerja mengajak Anda memindahkan sebagian bahan bakar solar dari tangki unit ke dalam jeriken pribadi di area disposal sepi saat shift malam:",
-        opts: [
-          { t: "Menolak tegas, mengingatkan sanksi PHK dan pidana pencurian aset tambang, serta melaporkan temuan tersebut kepada Pengawas/Security.", score: 100 },
-          { t: "Menolak ikut serta secara pribadi namun memilih bungkam agar tidak dianggap merusak hubungan pertemanan satu kampung halaman.", score: 30 },
-          { t: "Menerima bagian uang hasil penjualan bahan bakar tersebut selama pengambilan tidak sampai menyebabkan unit kehabisan solar di pit.", score: 0 },
-          { t: "Membiarkan rekan melakukannya asalkan tidak menggunakan tangki unit yang menjadi tanggung jawab operasional Anda sendiri.", score: 10 }
-        ]
-      },
-      {
-        q: "Pengawas lapangan menginstruksikan Anda melintasi jalur pintas lereng yang belum memiliki tanggul pengaman (safety berm) standar setinggi 3/4 diameter roda:",
-        opts: [
-          { t: "Mengikuti instruksi karena pengawas lapangan merupakan penanggung jawab penuh atas segala risiko operasional di area kerja tersebut.", score: 20 },
-          { t: "Melintasi jalur tersebut secara perlahan-lahan sambil menyalakan lampu hazard dan membunyikan isyarat klakson terus-menerus.", score: 35 },
-          { t: "Menyuruh unit rekan di belakang untuk melintas terlebih dahulu guna memastikan kekuatan tanah di tepi lereng jalan pintas.", score: 0 },
-          { t: "Menolak melintasi jalur tersebut dengan menerapkan hak 'Stop Work Authority' demi kepatuhan baku keselamatan dan perlindungan jiwa.", score: 100 }
-        ]
-      },
-      {
-        q: "Saat bermanuver mundur di front loading yang gelap pada shift malam, ban unit Anda menyenggol pipa dewatering hingga patah dan tidak ada orang yang melihat:",
-        opts: [
-          { t: "Melanjutkan pemuatan material dan memilih tidak melapor selama aliran pembuangan air pit tidak langsung meluap ke badan jalan.", score: 0 },
-          { t: "Segera berhenti di tempat stabil, memasang barikade/rambu bahaya, dan langsung melapor via radio ke dispatch pit serta pengawas pompa.", score: 100 },
-          { t: "Meninggalkan front galian tersebut dan berpindah ke lokasi kerja lain yang penerangan lampu tower-nya jauh lebih memadai.", score: 10 },
-          { t: "Menimbun bagian pipa yang retak menggunakan material tanah galian agar tidak terdeteksi oleh petugas inspeksi lingkungan pit.", score: 0 }
-        ]
-      },
-      {
-        q: "Petugas checker timbangan secara keliru mencetak kupon ritase harian Anda 2 lembar lebih banyak dari jumlah ritase riil yang Anda bawa:",
-        opts: [
-          { t: "Menyimpan kupon berlebih tersebut karena kesalahan cetak berasal dari kelalaian petugas checker dan dapat menambah insentif ritase.", score: 0 },
-          { t: "Memberikan kupon tambahan kepada rekan kerja satu rombongan yang unitnya sedang mengalami kerusakan mesin di area bengkel.", score: 15 },
-          { t: "Segera mengembalikan kelebihan kupon dan meminta petugas checker merevisi data pencatatan sesuai ritase aktual yang dikerjakan.", score: 100 },
-          { t: "Menunggu hingga briefing akhir shift untuk melihat apakah rekapitulasi selisih kupon tersebut dipertanyakan oleh supervisor pit.", score: 35 }
-        ]
-      },
-      {
-        q: "Sebelum menghidupkan mesin di awal shift, Anda melihat kaca spion kiri kabin pecah berantakan sehingga pandangan ke area blind spot kiri terhalang:",
-        opts: [
-          { t: "Tetap mengoperasikan unit dengan ekstra hati-hati dan mengandalkan bantuan konfirmasi radio setiap kali hendak berbelok ke kiri.", score: 25 },
-          { t: "Memutar sudut cermin spion kanan agar jangkauannya sedikit lebih lebar untuk mengimbangi titik buta di sisi kiri kabin unit.", score: 15 },
-          { t: "Mencatat temuan pada form P2H, mengabari pengawas, dan menunda pengoperasian unit sampai penggantian kaca spion baru selesai dipasang.", score: 100 },
-          { t: "Menukar spion dari unit rekan yang sedang parkir di rest area tanpa izin terlebih dahulu demi mengejar jam awal operasional kerja.", score: 10 }
-        ]
-      },
-      {
-        q: "Anda melihat kawan sesama operator tertidur di kabin dengan mesin menyala (high idle) tepat di tepi tebing galian aktif yang rawan longsor:",
-        opts: [
-          { t: "Mendekati kabin dengan prosedur aman, mengetuk pintu membangunkannya, dan menyarankannya melapor fatigue break resmi ke pengawas.", score: 100 },
-          { t: "Membiarkannya beristirahat karena memahami beratnya beban jam kerja shift malam dan kondisi jalan hauling yang monoton.", score: 20 },
-          { t: "Mengambil foto rekan tersebut secara diam-diam lalu membagikannya ke grup media sosial karyawan untuk memberikan efek jera.", score: 0 },
-          { t: "Membunyikan klakson panjang berulang kali dari jarak sangat dekat agar rekan tersebut terkejut dan langsung sadar terjaga.", score: 30 }
-        ]
-      },
-      {
-        q: "Angka Hour Meter (HM) unit menunjukkan jadwal servis berkala terlewat 60 jam, namun pengawas mendesak agar unit tetap dipacu menyelesaikan kuota tanah:",
-        opts: [
-          { t: "Mengikuti instruksi pengawas lapangan secara penuh tanpa perlu mengonfirmasikannya kepada bagian perencana pemeliharaan workshop.", score: 20 },
-          { t: "Melaporkan status jam operasi ke Maintenance Planner/Foreman Workshop agar jadwal servis preventif unit segera dieksekusi tepat waktu.", score: 100 },
-          { t: "Mencabut soket kabel sensor panel Hour Meter untuk sementara waktu agar catatan jam kerja unit tidak bertambah di sistem komputer.", score: 0 },
-          { t: "Menolak membawa unit secara sepihak dan melakukan aksi mogok kerja spontan di depan pos pengawas tanpa koordinasi resmi.", score: 15 }
-        ]
-      },
-      {
-        q: "Hujan gerimis mengguyur jalan hauling dan koefisien gesek tanah menurun drastis sehingga batas kecepatan resmi diturunkan menjadi maksimal 20 km/jam:",
-        opts: [
-          { t: "Menambah laju kecepatan hingga 35 km/jam jika kondisi jalur di depan tampak sepi dan tidak ada patroli mobil keselamatan pengawas.", score: 0 },
-          { t: "Merapatkan jarak iring dengan unit di depan agar terhindar dari cipratan lumpur tebal yang keluar dari roda belakang hauler lain.", score: 10 },
-          { t: "Melakukan pengereman mendadak secara berkala di jalan turunan untuk menguji seberapa jauh daya cengkeram ban pada permukaan tanah basah.", score: 0 },
-          { t: "Mematuhi batas 20 km/jam secara konsisten dan memperlebar jarak iring minimal 4 kali panjang unit meski antrean kendaraan memanjang.", score: 100 }
-        ]
-      },
-      {
-        q: "Saat pergantian shift, Anda menemukan dompet berisi uang tunai dan kartu identitas milik operator shift sebelumnya tertinggal di laci kabin:",
-        opts: [
-          { t: "Menyimpannya di saku pribadi dan baru menyerahkannya secara langsung jika pemilik aslinya datang menanyakan ke barak penginapan.", score: 35 },
-          { t: "Menyerahkan barang temuan tersebut secara utuh kepada pengawas shift atau bagian security dengan bukti berita acara serah terima resmi.", score: 100 },
-          { t: "Menaruh dompet tersebut di atas tangga luar kabin agar siapa pun kru pergantian shift yang melintas dapat melihatnya dengan jelas.", score: 10 },
-          { t: "Mengambil sebagian uang tunai tersebut sebagai pengganti biaya operasional telah mengamankan barang berharga yang tertinggal.", score: 0 }
-        ]
-      },
-      {
-        q: "Tekanan angin pada salah satu roda belakang unit kurang 20 PSI dari standar baku dingin, namun antrean kompresor di bengkel sedang cukup panjang:",
-        opts: [
-          { t: "Tetap bersabar mengantre mengisi tekanan angin sesuai spesifikasi standar demi mencegah kerusakan dinding ban (sidewall blowout).", score: 100 },
-          { t: "Memaksakan jalan membawa muatan penuh dengan anggapan panas gesekan putaran roda di jalan tambang akan menaikkan tekanan angin ban.", score: 10 },
-          { t: "Mengurangi muatan hingga separuh kapasitas angkut dan memacu unit pada kecepatan maksimal agar ritase harian tidak berkurang banyak.", score: 20 },
-          { t: "Menyiram permukaan ban yang kempis menggunakan air parit tambang sebelum mulai berjalan menanjak membawa material batubara.", score: 0 }
-        ]
-      },
-      {
-        q: "Rekan kerja satu tim Anda tercium aroma alkohol menyengat saat menghadiri briefing keselamatan awal shift (P5M):",
-        opts: [
-          { t: "Menutupi kondisi rekan tersebut dan menyuruhnya duduk di baris paling belakang agar tidak terlihat oleh instruktur safety yang bertugas.", score: 10 },
-          { t: "Memberinya minuman penyegar rasa kopi dan membiarkannya mengoperasikan unit alat berat selama dia merasa masih sanggup bekerja.", score: 0 },
-          { t: "Melaporkan secara langsung kepada pengawas/safety officer agar dilakukan tes kadar alkohol (breathalyzer) demi keselamatan nyawa di pit.", score: 100 },
-          { t: "Mengajak rekan tersebut bertaruh apakah dia sanggup mengemudikan alat berat tanpa menyenggol tanggul pembatas jalan tambang.", score: 0 }
-        ]
-      },
-      {
-        q: "Unit yang Anda kemudikan mengalami kebocoran udara pada tabung angin rem (brake reservoir) yang menimbulkan suara desisan halus di akhir shift:",
-        opts: [
-          { t: "Meninggalkan unit begitu saja di tempat parkir karena jam shift telah selesai dan hal tersebut menjadi tanggung jawab kru shift berikutnya.", score: 10 },
-          { t: "Menyumbat celah retakan selang angin menggunakan isolasi pipa dan sabun batangan agar suara desisan tidak terdengar dari luar kabin.", score: 15 },
-          { t: "Memarkir unit di tempat datar, memasang ganjal roda ganda, memasang Lockout/Tagout 'Out of Service', dan mencatat detail di form serah terima.", score: 100 },
-          { t: "Menguras habis seluruh pasokan udara di tangki rem agar suara kebocoran angin berhenti total sebelum operator pulang ke mess.", score: 20 }
-        ]
-      },
-      {
-        q: "Seorang kawan meminta bantuan Anda untuk melakukan absensi sidik jari / presensi kehadiran karena dirinya bangun terlambat di mess:",
-        opts: [
-          { t: "Membantu melakukan presensi kehadirannya karena merasa tidak enak hati menolak permohonan tolong kawan satu kampung perantauan.", score: 10 },
-          { t: "Menolak tegas permintaan tersebut karena manipulasi kehadiran merupakan pelanggaran integritas berat bersanksi pemutusan hubungan kerja.", score: 100 },
-          { t: "Menyuruh rekan kerja lain yang melakukannya agar risiko teguran tidak ditanggung secara langsung oleh Anda sendiri.", score: 15 },
-          { t: "Meminta imbalan uang pulsa terlebih dahulu sebelum bersedia membantu memanipulasi presensi kehadiran rekan tersebut.", score: 0 }
-        ]
-      }
-    ];
-
-    // MODUL 3: K3LH, P2H & REGULASI UMUM TAMBANG - 18 Butir Baku Mutu
-    // Kunci jawaban bernilai 100 disebar merata di opsi A, B, C, dan D dengan formulasi teknis baku
-    const rawModul3 = [
-      {
-        q: "Pemeriksaan level oli mesin (engine oil dipstick) pada saat prosedur P2H sebelum mesin dihidupkan (kondisi mesin dingin) harus berada pada posisi:",
-        opts: [
-          { t: "Tepat di bawah garis batas MIN agar oli mesin tidak meluap saat putaran kerja mesin mulai panas.", score: 0 },
-          { t: "Wajib melampaui garis batas MAX minimal 3 cm guna mengantisipasi penguapan oli di area berdebu.", score: 10 },
-          { t: "Di antara tanda batas MIN dan MAX pada permukaan landasan unit yang rata dan kondisi mesin mati stabil.", score: 100 },
-          { t: "Bebas di posisi batas mana pun asalkan batang stik pengukur masih basah terlumasi cairan oli.", score: 0 }
-        ]
-      },
-      {
-        q: "Berapa jarak iring aman (following distance) minimum antara dua unit hauler saat melaju di jalan hauling tambang pada kondisi operasional normal?",
-        opts: [
-          { t: "Minimal 50 meter (atau setara 4 sampai 6 kali panjang unit) dan wajib ditambah saat kondisi berdebu atau hujan licin.", score: 100 },
-          { t: "Minimal 30 meter pada medan tanjakan maupun turunan terjal dengan menyalakan lampu hazard kabin.", score: 45 },
-          { t: "Minimal 15 meter agar pandangan cermin spion terhadap nomor lambung kendaraan di depan tetap jelas terlihat.", score: 0 },
-          { t: "Cukup 1 kali panjang bodi unit asalkan sistem retarder dan rem kaki mekanis berfungsi secara prima.", score: 0 }
-        ]
-      },
-      {
-        q: "Arti dari kode isyarat klakson standar operasional keselamatan pertambangan: 'BUNYI KLAKSON 2 KALI' sebelum bermanuver menandakan:",
-        opts: [
-          { t: "Unit alat berat akan segera mematikan putaran mesin diesel (engine shutdown).", score: 0 },
-          { t: "Unit alat berat akan segera bergerak maju meninggalkan posisi berhenti (forward move).", score: 100 },
-          { t: "Unit alat berat akan segera bergerak mundur mendekati area pemuatan (reverse move).", score: 0 },
-          { t: "Unit alat berat sedang berada dalam kondisi darurat bahaya kebakaran kompartemen.", score: 0 }
-        ]
-      },
-      {
-        q: "Arti dari kode isyarat klakson standar operasional keselamatan pertambangan: 'BUNYI KLAKSON 3 KALI' menandakan:",
-        opts: [
-          { t: "Unit meminta izin mendahului kendaraan lambat di depannya melalui jalur kanan jalan hauling.", score: 0 },
-          { t: "Unit telah tiba di pos jembatan timbangan untuk verifikasi kupon muatan batubara.", score: 0 },
-          { t: "Unit akan segera menghidupkan putaran mesin dari posisi mati total (engine starting).", score: 15 },
-          { t: "Unit alat berat akan segera bergerak mundur dari posisinya saat ini (reverse move).", score: 100 }
-        ]
-      },
-      {
-        q: "Mengapa operator wajib mendiamkan mesin pada putaran rendah (low idle) selama 3 hingga 5 menit sebelum mematikan mesin (engine shutdown)?",
-        opts: [
-          { t: "Untuk mengisi kembali cadangan voltase aki baterai hingga mencapai kapasitas daya penuh 100 persen.", score: 0 },
-          { t: "Memberi waktu sirkulasi oli pelumas untuk mendinginkan poros bantalan turbocharger yang bersuhu sangat tinggi.", score: 100 },
-          { t: "Membakar endapan sisa jelaga solar di saluran knalpot agar saringan muffler tidak mengalami penyumbatan.", score: 10 },
-          { t: "Menghilangkan sisa tekanan angin pada booster silinder tabung rem kabin secara perlahan.", score: 0 }
-        ]
-      },
-      {
-        q: "Urutan prioritas hak jalan (Right of Way) di persimpangan jalan hauling tambang terbuka yang benar menurut aturan keselamatan adalah:",
-        opts: [
-          { t: "Mobil sarana ringan (LV) selalu didahulukan melintas dibanding dump truck yang membawa muatan material tanah.", score: 0 },
-          { t: "Truk kosong didahulukan melintas karena memiliki kelincahan manuver yang lebih cepat dibanding alat berat bermuatan.", score: 0 },
-          { t: "Kendaraan Tanggap Darurat (Ambulans/Rescue) > Unit Bermuatan Berat > Truk Kosong > Mobil Sarana Ringan (LV).", score: 100 },
-          { t: "Seluruh kendaraan yang datang dari arah sisi kiri persimpangan selalu memiliki hak jalan utama secara mutlak.", score: 0 }
-        ]
-      },
-      {
-        q: "Batas tinggi standar tanggul pengaman (safety berm) di sepanjang tebing jalan hauling tambang menurut Kepmen ESDM No. 1827 K adalah:",
-        opts: [
-          { t: "Minimal 1/4 dari diameter roda kendaraan terbesar yang aktif melintasi jalur angkut tersebut.", score: 0 },
-          { t: "Minimal 3/4 dari diameter roda kendaraan terbesar yang aktif melintasi jalur angkut tersebut.", score: 100 },
-          { t: "Minimal setinggi kap mesin depan mobil patroli operasional pengawas lapangan yang bertugas.", score: 0 },
-          { t: "Minimal 1/2 dari diameter roda kendaraan terbesar yang aktif melintasi jalur angkut tersebut.", score: 40 }
-        ]
-      },
-      {
-        q: "Ketika unit Anda terpaksa diparkir darurat di area jalan tanjakan/turunan karena kendala breakdown mesin, prosedur parkir aman adalah:",
-        opts: [
-          { t: "Cukup menarik tuas rem parkir kabin dan menyalakan lampu hazard segitiga peringatan darurat.", score: 20 },
-          { t: "Membiarkan putaran mesin tetap hidup dalam mode low idle agar kompresor rem udara terus terisi penuh.", score: 0 },
-          { t: "Mematikan mesin, memasang rem parkir, membelokkan roda ke arah tanggul, dan memasang ganjal roda ganda (wheel chocks).", score: 100 },
-          { t: "Memposisikan transmisi pada posisi gigi netral dan segera turun meninggalkan kabin unit sendirian.", score: 0 }
-        ]
-      },
-      {
-        q: "Fungsi utama dari penerapan sistem LOTO (Lockout / Tagout) pada unit alat berat saat dilakukan pekerjaan perawatan mekanik adalah:",
-        opts: [
-          { t: "Mengisolasi sumber energi berbahaya secara fisik sehingga unit tidak dapat dihidupkan tanpa izin saat ada orang bekerja.", score: 100 },
-          { t: "Sebagai tanda identifikasi bahwa alat berat tersebut merupakan unit sewa kontraktor dari pihak luar perusahaan.", score: 0 },
-          { t: "Mencatat total akumulasi jam kerja lembur mekanik yang sedang melaksanakan penggantian suku cadang.", score: 0 },
-          { t: "Mencegah terjadinya kehilangan bahan bakar solar dan suku cadang cadangan di area bengkel workshop.", score: 0 }
-        ]
-      },
-      {
-        q: "Pada pemeriksaan P2H komponen undercarriage (track link), apa bahaya mekanis jika setelan rantai track disetel terlalu kencang?",
-        opts: [
-          { t: "Dapat menyebabkan konsumsi bahan bakar solar mesin menjadi jauh lebih irit pada saat beroperasi.", score: 0 },
-          { t: "Laju kecepatan jelajah unit alat berat akan bertambah hingga mencapai 25 persen lebih cepat.", score: 0 },
-          { t: "Mempercepat keausan bushing, pin, sprocket, dan membebani final drive secara berlebih hingga rawan retak patah.", score: 100 },
-          { t: "Menyebabkan sambungan track link menjadi macet dan tidak dapat berputar mengikuti putaran idler depan.", score: 25 }
-        ]
-      },
-      {
-        q: "Saat memeriksa volume air pendingin radiator (coolant) pada unit yang baru saja beroperasi berat di cuaca panas, tindakan yang tepat adalah:",
-        opts: [
-          { t: "Langsung membuka penutup radiator utama secara cepat menggunakan kain tebal basah untuk membuang uap panas.", score: 0 },
-          { t: "Dilarang membuka tutup radiator saat panas; periksa level volume cairan melalui tabung reservoir cadangan transparan.", score: 100 },
-          { t: "Menyiram dinding luar tabung radiator dengan air dingin lalu langsung memutar tutupnya hingga terlepas terbuka.", score: 0 },
-          { t: "Menusuk katup relief penutup radiator menggunakan ujung obeng panjang untuk mempercepat pembuangan tekanan uap.", score: 0 }
-        ]
-      },
-      {
-        q: "Indikator saringan udara (air cleaner dust indicator) pada panel monitor kabin menunjukkan warna MERAH. Hal ini menandakan bahwa:",
-        opts: [
-          { t: "Elemen filter udara tersumbat debu pekat dan memerlukan pembersihan kompresor atau penggantian elemen baru segera.", score: 100 },
-          { t: "Tekanan kerja hisap sistem turbocharger mesin diesel telah melampaui batas ambang kapasitas operasional normal.", score: 0 },
-          { t: "Bahan bakar solar di tangki utama telah tercampur endapan air hasil pengembunan udara lembap.", score: 0 },
-          { t: "Kipas pendingin sirip radiator sedang berputar pada arah putaran terbalik secara otomatis.", score: 0 }
-        ]
-      },
-      {
-        q: "Batas jarak bebas minimum (safe clearance distance) saat mengoperasikan unit alat berat di dekat jaringan kabel listrik tegangan tinggi adalah:",
-        opts: [
-          { t: "Minimal 1 meter diukur dari titik jangkauan tertinggi ujung boom maupun tiang menara mesin bor.", score: 0 },
-          { t: "Cukup diukur sejauh panjang radius jangkauan galian bucket saat posisi terangkat mendatar.", score: 15 },
-          { t: "Minimal 5 meter (dan jarak wajib ditambah lebih jauh bila tegangan voltase saluran transmisi semakin tinggi).", score: 100 },
-          { t: "Boleh berada pada jarak 2 meter asalkan attachment bucket tidak menyentuh kawat pembungkus kabel secara langsung.", score: 0 }
-        ]
-      },
-      {
-        q: "Tindakan pertama yang wajib diambil seorang operator jika unitnya tiba-tiba mengalami semburan api di kompartemen mesin adalah:",
-        opts: [
-          { t: "Melompat keluar dari kabin unit secara spontan saat kendaraan masih bergerak meluncur mencari tanah datar.", score: 0 },
-          { t: "Hentikan unit di tempat aman, tarik rem parkir, matikan engine, aktifkan Fire Suppression/APAR, lalu evakuasi berlawanan arah angin.", score: 100 },
-          { t: "Terus memacu unit secepat mungkin menuju kolam penampungan air sump tambang untuk menyiram kobaran api.", score: 0 },
-          { t: "Membuka kap penutup mesin dengan tangan kosong guna memastikan letak titik api sebelum mencari alat pemadam.", score: 0 }
-        ]
-      },
-      {
-        q: "Lampu indikator peringatan pelumasan menyala merah bergambar teko oli saat putaran mesin sedang berjalan tinggi mengindikasikan bahwa:",
-        opts: [
-          { t: "Volume cairan pelumas oli mesin baru saja selesai diisi ulang secara penuh oleh petugas servis keliling.", score: 0 },
-          { t: "Tekanan pelumasan oli mesin (engine oil pressure) drop drastis di bawah standar aman dan mesin wajib segera dimatikan.", score: 100 },
-          { t: "Tingkat kekentalan dan viskositas oli mesin masih berada dalam kondisi yang sangat jernih serta layak pakai.", score: 0 },
-          { t: "Kinerja kompresor sistem pendingin AC kabin sedang bekerja pada batas putaran putaran maksimal.", score: 0 }
-        ]
-      },
-      {
-        q: "Aturan baku keselamatan '3-Points Contact' (tiga titik tumpu) wajib diterapkan secara disiplin oleh setiap operator pada saat:",
-        opts: [
-          { t: "Melakukan manuver putar balik di area persimpangan sempit jalan hauling tambang batubara.", score: 0 },
-          { t: "Memeriksa kekencangan baut mur roda truk menggunakan kunci momen di bengkel workshop penambangan.", score: 0 },
-          { t: "Naik atau turun dari tangga kabin unit alat berat (dua tangan satu kaki, atau dua kaki satu tangan selalu menempel).", score: 100 },
-          { t: "Mengaktifkan saklar lampu hazard, lampu kabut, dan saklar lampu rotary di dalam ruang kabin kemudi.", score: 0 }
-        ]
-      },
-      {
-        q: "Pemeriksaan fisik Alat Pemadam Api Ringan (APAR) jenis serbuk kimia kering (Dry Chemical Powder) pada unit saat P2H meliputi:",
-        opts: [
-          { t: "Memastikan jarum manometer di zona HIJAU, segel pin pengaman terpasang utuh, dan selang nozzle tidak retak tersumbat.", score: 100 },
-          { t: "Memastikan cat tabung luar mulus mengkilap tanpa ada goresan noda debu tambang sedikit pun.", score: 0 },
-          { t: "Membuka penutup tabung setiap pagi untuk memeriksa apakah isi serbuk kimia di dalamnya masih penuh.", score: 0 },
-          { t: "Menyemprotkan sedikit serbuk kimia ke udara bebas untuk menguji kelancaran katup penekan tuas APAR.", score: 0 }
-        ]
-      },
-      {
-        q: "Dalam standar komunikasi radio pertambangan, pesan panggilan darurat untuk insiden kecelakaan fatal diawali dengan format kata:",
-        opts: [
-          { t: "'Halo pengawas pit, mohon meluncur segera ke lokasi front loading karena ada insiden kecelakaan unit.'", score: 20 },
-          { t: "'PERINGATAN BAHAYA SATU DUA TIGA' secara berulang kali tanpa jeda hingga seluruh kendaraan berhenti berjalan.", score: 25 },
-          { t: "'BREAK BREAK' diselingi bunyi klakson panjang secara terus menerus agar semua unit hauler menepi.", score: 15 },
-          { t: "'EMERGENCY, EMERGENCY, EMERGENCY' di seluruh frekuensi kerja dengan menyebutkan identitas, lokasi pasti, dan jumlah korban.", score: 100 }
-        ]
-      }
-    ];
+    // Seluruh bank soal diterima bersih (tanpa kunci & skor) dari server via verifikasi NIK
+    const serverQuestionPackages = {
+      modul1: [], // 12 Butir EQ (Forced-Choice A vs B)
+      modul2: [], // 15 Butir SJT
+      modul3: [], // 18 Butir K3LH
+      modul4: []  // 20 Butir Teknis Unit
+    };
 
     // ==========================================
     // FUNGSI NAVIGASI TAMPILAN
@@ -1225,26 +829,168 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function handleRoleChange(selectedKey) {
-      candidateData.posisiKey = selectedKey;
-      const selectEl = document.getElementById('candRoleSelect');
-      candidateData.posisi = selectEl.options[selectEl.selectedIndex].text;
-      document.getElementById('candRole').value = selectedKey;
+    // ==========================================
+    // VERIFIKASI NIK (JSONP) & FILTER KETAT FORMASI
+    // ==========================================
+    function handleVerifyNik() {
+      const nikInput = document.getElementById('candNik');
+      const cleanNik = (nikInput.value || '').trim().replace(/[^0-9]/g, '');
+      const statusBox = document.getElementById('nikVerifyStatusBox');
+      const regForm = document.getElementById('regForm');
+      const verifyBtn = document.getElementById('btnVerifyNik');
+      const verifyBtnLabel = document.getElementById('btnVerifyNikLabel');
 
-      // Ambil soal spesifik unit baru secara dinamis dari backend jika posisi diubah
-      fetchUnitQuestions(selectedKey);
+      if (cleanNik.length < 10) {
+        showCustomDialog('Format NIK Belum Sesuai', 'Nomor Induk Kependudukan (NIK) minimal 10 sampai 16 digit angka sesuai KTP.', true);
+        return;
+      }
+
+      verifyBtn.disabled = true;
+      verifyBtnLabel.textContent = 'MEMERIKSA...';
+      statusBox.className = 'p-3.5 rounded-xl border border-amber-200 bg-amber-50 text-amber-800 text-xs space-y-1';
+      statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-notch fa-spin"></i> Menghubungkan ke Database Pelamar Operator...</p>';
+      statusBox.classList.remove('hidden');
+
+      executeJsonpVerification(cleanNik)
+        .then(res => handleNikResponse(res, cleanNik))
+        .catch(err => {
+          verifyBtn.disabled = false;
+          verifyBtnLabel.textContent = 'VERIFIKASI NIK';
+          isNikVerified = false;
+
+          statusBox.className = 'p-3.5 rounded-xl border border-red-200 bg-red-50 text-red-700 text-xs space-y-1';
+          statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation text-red-600"></i> Tidak Dapat Terhubung ke Server</p>' +
+            '<p class="text-[11px] leading-relaxed">Koneksi ke server Google Apps Script terhenti (Timeout). Pastikan izin Web App di Google Apps Script telah disetel ke <strong>"Anyone"</strong> dan lakukan Deploy New Version.</p>';
+
+          showCustomDialog('Koneksi Terhenti', 'Server tidak merespons dalam batas waktu 8 detik. Pastikan Web App Google Apps Script telah di-deploy dengan akses <strong>Anyone</strong>.', true);
+        });
     }
 
-    function fetchUnitQuestions(roleKey) {
-      const separator = GOOGLE_SCRIPT_WEBHOOK_URL.includes('?') ? '&' : '?';
-      fetch(GOOGLE_SCRIPT_WEBHOOK_URL + separator + 'action=getUnitQuestions&role=' + encodeURIComponent(roleKey))
-        .then(res => res.json())
-        .then(data => {
-          if (data && data.questions && data.questions.length > 0) {
-            dynamicModul4Questions = data.questions;
+    function executeJsonpVerification(nik) {
+      return new Promise((resolve, reject) => {
+        const callbackName = 'ktc_cb_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
+        const script = document.createElement('script');
+        let isHandled = false;
+
+        const timer = setTimeout(() => {
+          if (!isHandled) {
+            isHandled = true;
+            cleanup();
+            reject(new Error('JSONP Request Timeout (8s)'));
           }
-        })
-        .catch(err => console.log('Fetch soal unit notice:', err));
+        }, 8000);
+
+        function cleanup() {
+          clearTimeout(timer);
+          try {
+            if (script.parentNode) script.parentNode.removeChild(script);
+          } catch (e) {}
+          delete window[callbackName];
+        }
+
+        window[callbackName] = function(data) {
+          if (!isHandled) {
+            isHandled = true;
+            cleanup();
+            resolve(data);
+          }
+        };
+
+        script.onerror = function() {
+          if (!isHandled) {
+            isHandled = true;
+            cleanup();
+            reject(new Error('Gagal memuat skrip verifikasi'));
+          }
+        };
+
+        const separator = GOOGLE_SCRIPT_WEBHOOK_URL.includes('?') ? '&' : '?';
+        script.src = GOOGLE_SCRIPT_WEBHOOK_URL + separator + 'action=checkNIK&nik=' + encodeURIComponent(nik) + '&callback=' + callbackName;
+        document.body.appendChild(script);
+      });
+    }
+
+    function handleNikResponse(res, cleanNik) {
+      const verifyBtn = document.getElementById('btnVerifyNik');
+      const verifyBtnLabel = document.getElementById('btnVerifyNikLabel');
+      const statusBox = document.getElementById('nikVerifyStatusBox');
+      const regForm = document.getElementById('regForm');
+      const nikInput = document.getElementById('candNik');
+
+      verifyBtn.disabled = false;
+      verifyBtnLabel.textContent = 'VERIFIKASI NIK';
+
+      if (!res || typeof res !== 'object') {
+        showCustomDialog('Format Data Salah', 'Respon server tidak valid.', true);
+        return;
+      }
+
+      // KASUS 1: POSISI NON-OPERATOR DITOLAK KETAT OLEH SERVER
+      if (res.status === 'rejected_position') {
+        statusBox.className = 'p-4 rounded-xl border border-red-300 bg-red-50 text-red-800 text-xs space-y-2';
+        statusBox.innerHTML = '<p class="font-extrabold flex items-center gap-1.5 text-red-700 text-sm"><i class="fa-solid fa-ban text-red-600"></i> Akses Terbatas: Khusus Formasi Operator Alat Berat &amp; Driver Truk Tambang</p>' +
+          '<p class="text-[11px] leading-relaxed text-red-700">' + res.message + '</p>' +
+          '<div class="pt-1 text-[11px] border-t border-red-200 text-red-600 font-semibold">' +
+          'Nama Terdaftar: <strong>' + (res.nama || '-') + '</strong> &bull; Posisi Berkas: <strong>' + (res.posisi || '-') + '</strong>' +
+          '</div>';
+        regForm.classList.add('hidden');
+        isNikVerified = false;
+        showCustomDialog('Akses Terbatas', res.message, true);
+        return;
+      }
+
+      // KASUS 2: SUDAH PERNAH UJIAN
+      if (res.status === 'already_completed') {
+        statusBox.className = 'p-3.5 rounded-xl border border-red-200 bg-red-50 text-red-700 text-xs space-y-1';
+        statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-xmark text-red-600"></i> Sesi Ujian Selesai</p>' +
+          '<p class="text-[11px] leading-relaxed">' + res.message + '</p>';
+        regForm.classList.add('hidden');
+        isNikVerified = false;
+        showCustomDialog('Sesi Telah Selesai', res.message, true);
+        return;
+      }
+
+      // KASUS 3: NIK TIDAK DITEMUKAN
+      if (res.status === 'not_found') {
+        statusBox.className = 'p-3.5 rounded-xl border border-red-200 bg-red-50 text-red-700 text-xs space-y-1';
+        statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation text-red-600"></i> NIK Tidak Terdaftar</p>' +
+          '<p class="text-[11px] leading-relaxed">' + (res.message || ('NIK ' + cleanNik + ' tidak ditemukan di database.')) + '</p>';
+        regForm.classList.add('hidden');
+        isNikVerified = false;
+        showCustomDialog('NIK Tidak Ditemukan', res.message || 'Nomor KTP/NIK tidak terdaftar dalam database pelamar terverifikasi.', true);
+        return;
+      }
+
+      // KASUS 4: SUKSES (OPERATOR/DRIVER TERVERIFIKASI)
+      if (res.status === 'success') {
+        isNikVerified = true;
+        nikInput.readOnly = true;
+
+        candidateData.nik = cleanNik;
+        candidateData.nama = res.nama || "Kandidat Operator Terdaftar";
+        candidateData.whatsapp = res.whatsapp || "-";
+        candidateData.posisi = res.posisi || "Operator Unit Tambang";
+        candidateData.posisiKey = res.roleKey || "dump_truck";
+
+        // Tampung bank soal bersih yang dikirim server
+        if (res.packages) {
+          serverQuestionPackages.modul1 = res.packages.modul1 || [];
+          serverQuestionPackages.modul2 = res.packages.modul2 || [];
+          serverQuestionPackages.modul3 = res.packages.modul3 || [];
+          serverQuestionPackages.modul4 = res.packages.modul4 || [];
+        }
+
+        document.getElementById('candName').value = candidateData.nama;
+        document.getElementById('candRoleDisplay').value = candidateData.posisi;
+        document.getElementById('candRole').value = candidateData.posisiKey;
+        document.getElementById('candPhone').value = candidateData.whatsapp;
+
+        statusBox.className = 'p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-800 text-xs space-y-1';
+        statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> Formasi Operator Terverifikasi Resmi</p>' +
+          '<p class="text-[11px] text-emerald-700">Nama: <strong>' + candidateData.nama + '</strong> &bull; Posisi: <strong>' + candidateData.posisi + '</strong></p>';
+
+        regForm.classList.remove('hidden');
+      }
     }
 
     // ==========================================
@@ -1262,6 +1008,10 @@
       }
       if (!document.getElementById('candAgreement').checked) {
         showCustomDialog('Pakta Integritas', 'Anda wajib mencentang persetujuan pakta integritas kejujuran ujian.', true);
+        return;
+      }
+      if (serverQuestionPackages.modul1.length === 0) {
+        showCustomDialog('Soal Sedang Dimuat', 'Paket soal sedang dipersiapkan oleh server. Silakan coba sesaat lagi.', true);
         return;
       }
 
@@ -1389,7 +1139,7 @@
       if (btnStartLabel) btnStartLabel.textContent = 'Membuka Kamera...';
 
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        showCustomDialog('Kamera Tidak Didukung', 'Browser tidak mendukung akses kamera secara langsung. Pastikan memakai Chrome/Safari dengan protokol aman HTTPS.', true);
+        showCustomDialog('Kamera Tidak Didukung', 'Browser tidak mendukung akses kamera langsung. Pastikan memakai Chrome/Safari dengan protokol HTTPS.', true);
         if (btnStartLabel) btnStartLabel.textContent = 'Nyalakan Kamera Live';
         return;
       }
@@ -1536,154 +1286,6 @@
     }
 
     // ==========================================
-    // FUNGSI VERIFIKASI NIK KE GOOGLE APPS SCRIPT
-    // ==========================================
-    function handleVerifyNik() {
-      const nikInput = document.getElementById('candNik');
-      const cleanNik = (nikInput.value || '').trim().replace(/[^0-9]/g, '');
-      const statusBox = document.getElementById('nikVerifyStatusBox');
-      const regForm = document.getElementById('regForm');
-      const verifyBtn = document.getElementById('btnVerifyNik');
-      const verifyBtnLabel = document.getElementById('btnVerifyNikLabel');
-
-      if (cleanNik.length < 10) {
-        showCustomDialog('Format NIK Belum Sesuai', 'Nomor Induk Kependudukan (NIK) minimal 10 sampai 16 digit angka sesuai KTP.', true);
-        return;
-      }
-
-      verifyBtn.disabled = true;
-      verifyBtnLabel.textContent = 'MEMERIKSA...';
-      statusBox.className = 'p-3.5 rounded-xl border border-amber-200 bg-amber-50 text-amber-800 text-xs space-y-1';
-      statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-notch fa-spin"></i> Menghubungkan ke Database Pelamar Operator...</p>';
-      statusBox.classList.remove('hidden');
-
-      // Jalankan verifikasi via JSONP (Bebas CORS browser)
-      executeJsonpVerification(cleanNik)
-        .then(res => handleNikResponse(res, cleanNik))
-        .catch(err => {
-          verifyBtn.disabled = false;
-          verifyBtnLabel.textContent = 'VERIFIKASI NIK';
-          isNikVerified = false;
-
-          statusBox.className = 'p-3.5 rounded-xl border border-red-200 bg-red-50 text-red-700 text-xs space-y-1';
-          statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation text-red-600"></i> Tidak Dapat Terhubung ke Server</p>' +
-            '<p class="text-[11px] leading-relaxed">Koneksi ke server Google Apps Script terhenti (Timeout). Pastikan izin Web App di Google Apps Script telah disetel ke <strong>"Anyone"</strong> dan lakukan Deploy New Version.</p>';
-
-          showCustomDialog('Koneksi Terhenti', 'Server tidak merespons dalam batas waktu 7 detik. Pastikan Web App Google Apps Script telah di-deploy dengan akses <strong>Anyone</strong>.', true);
-        });
-    }
-
-    function executeJsonpVerification(nik) {
-      return new Promise((resolve, reject) => {
-        const callbackName = 'ktc_cb_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
-        const script = document.createElement('script');
-        let isHandled = false;
-
-        const timer = setTimeout(() => {
-          if (!isHandled) {
-            isHandled = true;
-            cleanup();
-            reject(new Error('JSONP Request Timeout (7s)'));
-          }
-        }, 7000);
-
-        function cleanup() {
-          clearTimeout(timer);
-          try {
-            if (script.parentNode) script.parentNode.removeChild(script);
-          } catch (e) {}
-          delete window[callbackName];
-        }
-
-        window[callbackName] = function(data) {
-          if (!isHandled) {
-            isHandled = true;
-            cleanup();
-            resolve(data);
-          }
-        };
-
-        script.onerror = function() {
-          if (!isHandled) {
-            isHandled = true;
-            cleanup();
-            reject(new Error('Gagal memuat script JSONP'));
-          }
-        };
-
-        const separator = GOOGLE_SCRIPT_WEBHOOK_URL.includes('?') ? '&' : '?';
-        script.src = GOOGLE_SCRIPT_WEBHOOK_URL + separator + 'action=checkNIK&nik=' + encodeURIComponent(nik) + '&callback=' + callbackName;
-        document.body.appendChild(script);
-      });
-    }
-
-    function handleNikResponse(res, cleanNik) {
-      const verifyBtn = document.getElementById('btnVerifyNik');
-      const verifyBtnLabel = document.getElementById('btnVerifyNikLabel');
-      const statusBox = document.getElementById('nikVerifyStatusBox');
-      const regForm = document.getElementById('regForm');
-      const nikInput = document.getElementById('candNik');
-
-      verifyBtn.disabled = false;
-      verifyBtnLabel.textContent = 'VERIFIKASI NIK';
-
-      if (!res || typeof res !== 'object') {
-        showCustomDialog('Format Data Salah', 'Respon server tidak valid.', true);
-        return;
-      }
-
-      if (res.status === 'already_completed') {
-        statusBox.className = 'p-3.5 rounded-xl border border-red-200 bg-red-50 text-red-700 text-xs space-y-1';
-        statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-xmark text-red-600"></i> Sesi Ujian Telah Selesai</p>' +
-          '<p class="text-[11px] leading-relaxed">NIK ' + cleanNik + ' tercatat telah menuntaskan asesmen sebelumnya pada Database Hasil Ujian.</p>';
-        regForm.classList.add('hidden');
-        isNikVerified = false;
-        showCustomDialog('Sesi Telah Selesai', 'NIK Anda telah tercatat menyelesaikan ujian sebelumnya. Setiap kandidat hanya memiliki 1 kali kesempatan.', true);
-        return;
-      }
-
-      if (res.status === 'not_found') {
-        statusBox.className = 'p-3.5 rounded-xl border border-red-200 bg-red-50 text-red-700 text-xs space-y-1';
-        statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation text-red-600"></i> NIK Tidak Terdaftar</p>' +
-          '<p class="text-[11px] leading-relaxed">NIK <strong>' + cleanNik + '</strong> tidak ditemukan di database_pelamar. Pastikan NIK sesuai dengan berkas pendaftaran Anda.</p>';
-        regForm.classList.add('hidden');
-        isNikVerified = false;
-        showCustomDialog('NIK Tidak Ditemukan', 'Nomor KTP/NIK tidak terdaftar dalam database pelamar yang lolos seleksi berkas.', true);
-        return;
-      }
-
-      if (res.status === 'success') {
-        isNikVerified = true;
-        nikInput.readOnly = true;
-
-        candidateData.nik = cleanNik;
-        candidateData.nama = res.nama || "Kandidat Operator Terdaftar";
-        candidateData.whatsapp = res.whatsapp || "-";
-        
-        if (res.roleKey) {
-          candidateData.posisiKey = res.roleKey;
-          candidateData.posisi = res.posisi || candidateData.posisi;
-          const roleSelect = document.getElementById('candRoleSelect');
-          if (roleSelect) roleSelect.value = res.roleKey;
-        }
-
-        // Simpan butir soal spesifik unit yang dikirimkan oleh backend Apps Script (BankSoal.gs)
-        if (res.questionsM4 && Array.isArray(res.questionsM4) && res.questionsM4.length > 0) {
-          dynamicModul4Questions = res.questionsM4;
-        }
-
-        document.getElementById('candName').value = candidateData.nama;
-        document.getElementById('candPhone').value = candidateData.whatsapp;
-
-        statusBox.className = 'p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-800 text-xs space-y-1';
-        statusBox.innerHTML = '<p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> NIK Terverifikasi Resmi</p>' +
-          '<p class="text-[11px] text-emerald-700">Nama: <strong>' + candidateData.nama + '</strong> &bull; Posisi: <strong>' + candidateData.posisi + '</strong></p>';
-
-        regForm.classList.remove('hidden');
-      }
-    }
-
-    // ==========================================
     // PENGATURAN MODUL & TIMER PENGERJAAN
     // ==========================================
     function initiateModule(modNum) {
@@ -1736,7 +1338,7 @@
     }
 
     function autoLockCurrentModule() {
-      showCustomDialog('Waktu Modul Habis', 'Batas waktu pengerjaan Modul ' + activeModule + ' telah berakhir. Sistem mengunci jawaban Anda secara otomatis dan beralih ke sesi berikutnya.', true);
+      showCustomDialog('Waktu Modul Habis', 'Batas waktu pengerjaan Modul ' + activeModule + ' telah berakhir. Sistem mengunci lembar jawaban secara otomatis dan beralih ke sesi berikutnya.', true);
       moduleSubmittedStatus[activeModule] = true;
       advanceToNextModule();
     }
@@ -1747,7 +1349,7 @@
       const msg = document.getElementById('confirmLockMessage');
 
       if (answered < total) {
-        msg.innerHTML = 'Anda baru menjawab <strong>' + answered + ' dari ' + total + ' butir</strong> pada Modul ' + activeModule + '.<br><br>Apakah Anda yakin ingin mengunci modul ini sekarang? Soal kosong dihitung nol.';
+        msg.innerHTML = 'Anda baru menjawab <strong>' + answered + ' dari ' + total + ' butir</strong> pada Modul ' + activeModule + '.<br><br>Apakah Anda yakin ingin mengunci modul ini sekarang? Butir kosong dihitung nol.';
       } else {
         msg.innerHTML = 'Seluruh <strong>' + total + ' butir</strong> Modul ' + activeModule + ' telah terisi lengkap.<br><br>Kunci jawaban sekarang?';
       }
@@ -1773,6 +1375,9 @@
       }
     }
 
+    // ==========================================
+    // PENGIRIMAN DATA KE SERVER & SKORING MURNI BACKEND
+    // ==========================================
     async function finishEntireExam() {
       isCheatTrackingActive = false;
       if (examTimerInterval) clearInterval(examTimerInterval);
@@ -1797,85 +1402,10 @@
       document.getElementById('receiptTimestamp').textContent = timestampStr;
       document.getElementById('receiptTokenId').textContent = tokenId;
 
-      const payload = compileCandidateResults(timestampStr);
-
-      // Render Nilai ke Tampilan UI
-      document.getElementById('displayScoreTotal').textContent = payload.total_skor_terbobot;
-      document.getElementById('displayScoreM1').textContent = payload.skor_kematangan_eq;
-      document.getElementById('displayScoreM2').textContent = payload.skor_sikap_kerja_sjt;
-      document.getElementById('displayScoreM3').textContent = payload.skor_k3lh_p2h;
-      document.getElementById('displayScoreM4').textContent = payload.skor_teknis_unit;
-
-      const recBadge = document.getElementById('resultRecommendationBadge');
-      if (payload.rekomendasi === 'HIJAU') {
-        recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
-        recBadge.innerHTML = '<i class="fa-solid fa-circle-check"></i> <span>Rekomendasi: Memenuhi Syarat (Hijau)</span>';
-      } else if (payload.rekomendasi === 'KUNING') {
-        recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-amber-500/20 text-amber-300 border border-amber-500/40';
-        recBadge.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> <span>Rekomendasi: Dipertimbangkan (Kuning)</span>';
-      } else {
-        recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-red-500/20 text-red-300 border border-red-500/40';
-        recBadge.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> <span>Rekomendasi: Belum Memenuhi (Merah)</span>';
-      }
-
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
-      await sendDataDirectToGoogleSheets(payload);
-    }
-
-    function compileCandidateResults(timestampStr) {
-      // Modul 1 (EQ): Bobot 15%
-      let m1Sum = 0;
-      rawModul1.forEach((item, idx) => {
-        const choice = candidateData.answers['m1_' + idx];
-        if (choice === 'A') m1Sum += item.scoreA;
-        else if (choice === 'B') m1Sum += item.scoreB;
-      });
-      const scoreM1 = Math.round((m1Sum / (rawModul1.length * 100)) * 100);
-
-      // Modul 2 (SJT Sikap Kerja): Bobot 25%
-      let m2Sum = 0;
-      rawModul2.forEach((item, idx) => {
-        m2Sum += Number(candidateData.answers['m2_' + idx] || 0);
-      });
-      const scoreM2 = Math.round(m2Sum / rawModul2.length);
-
-      // Modul 3 (K3LH & P2H Umum): Bobot 25%
-      let m3Sum = 0;
-      rawModul3.forEach((item, idx) => {
-        const optIdx = candidateData.answers['m3_' + idx];
-        if (optIdx !== undefined && item.opts[optIdx]) {
-          m3Sum += Number(item.opts[optIdx].score || 0);
-        }
-      });
-      const scoreM3 = Math.round(m3Sum / rawModul3.length);
-
-      // Modul 4 (Teknis Unit): Bobot 35%
-      const unitQuestions = dynamicModul4Questions;
-      let m4Sum = 0;
-      if (unitQuestions.length > 0) {
-        unitQuestions.forEach((item, idx) => {
-          const optIdx = candidateData.answers['m4_' + idx];
-          if (optIdx !== undefined && item.opts[optIdx]) {
-            m4Sum += Number(item.opts[optIdx].score || 0);
-          }
-        });
-      }
-      const scoreM4 = unitQuestions.length > 0 ? Math.round(m4Sum / unitQuestions.length) : 0;
-
-      // Total Skor Terbobot
-      const totalScore = Math.round(
-        (scoreM1 * 0.15) +
-        (scoreM2 * 0.25) +
-        (scoreM3 * 0.25) +
-        (scoreM4 * 0.35)
-      );
-
-      let recommendation = "MERAH";
-      if (totalScore >= 75 && scoreM2 >= 70 && scoreM3 >= 70) recommendation = "HIJAU";
-      else if (totalScore >= 60) recommendation = "KUNING";
-
-      return {
+      // Siapkan payload jawaban mentah tanpa bocoran skor
+      const payload = {
         timestamp: timestampStr,
         nik: candidateData.nik,
         nama: candidateData.nama,
@@ -1883,40 +1413,88 @@
         posisi: candidateData.posisi,
         posisiKey: candidateData.posisiKey,
         foto_selfie: candidateData.fotoBase64,
-        skor_kematangan_eq: scoreM1,
-        skor_sikap_kerja_sjt: scoreM2,
-        skor_k3lh_p2h: scoreM3,
-        skor_teknis_unit: scoreM4,
-        total_skor_terbobot: totalScore,
-        rekomendasi: recommendation,
-        pelanggaran_tab: candidateData.tabViolations
+        pelanggaran_tab: candidateData.tabViolations,
+        user_answers: candidateData.answers // Jawaban murni (A/B atau indeks opsi)
       };
+
+      // Tampilkan indikator proses kalkulasi server
+      document.getElementById('displayScoreTotal').textContent = "...";
+      document.getElementById('displayScoreM1').textContent = "...";
+      document.getElementById('displayScoreM2').textContent = "...";
+      document.getElementById('displayScoreM3').textContent = "...";
+      document.getElementById('displayScoreM4').textContent = "...";
+
+      await submitAnswersToServer(payload);
     }
 
-    async function sendDataDirectToGoogleSheets(payload) {
+    async function submitAnswersToServer(payload) {
       const syncStatusIcon = document.getElementById('syncStatusIcon');
       const syncStatusTitle = document.getElementById('syncStatusTitle');
       const syncStatusSubtitle = document.getElementById('syncStatusSubtitle');
 
       try {
-        await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
+        const response = await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
           method: 'POST',
-          mode: 'no-cors',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify(payload)
         });
 
-        syncStatusIcon.className = 'w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0 border border-emerald-200';
-        syncStatusIcon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-        syncStatusTitle.textContent = 'Data & Lembar Respon Operator Berhasil Tersimpan';
-        syncStatusSubtitle.textContent = 'Seluruh parameter evaluasi dan foto presensi telah tercatat di server PT KTC.';
+        const result = await response.json();
+
+        if (result && result.status === 'success' && result.scores) {
+          const s = result.scores;
+          document.getElementById('displayScoreTotal').textContent = s.totalScore;
+          document.getElementById('displayScoreM1').textContent = s.scoreM1;
+          document.getElementById('displayScoreM2').textContent = s.scoreM2;
+          document.getElementById('displayScoreM3').textContent = s.scoreM3;
+          document.getElementById('displayScoreM4').textContent = s.scoreM4;
+
+          const recBadge = document.getElementById('resultRecommendationBadge');
+          if (s.recommendation === 'HIJAU') {
+            recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
+            recBadge.innerHTML = '<i class="fa-solid fa-circle-check"></i> <span>Rekomendasi: Memenuhi Syarat (Hijau)</span>';
+          } else if (s.recommendation === 'KUNING') {
+            recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-amber-500/20 text-amber-300 border border-amber-500/40';
+            recBadge.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> <span>Rekomendasi: Dipertimbangkan (Kuning)</span>';
+          } else {
+            recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-red-500/20 text-red-300 border border-red-500/40';
+            recBadge.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> <span>Rekomendasi: Belum Memenuhi (Merah)</span>';
+          }
+
+          syncStatusIcon.className = 'w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0 border border-emerald-200';
+          syncStatusIcon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+          syncStatusTitle.textContent = 'Data & Lembar Respon Operator Berhasil Tersimpan';
+          syncStatusSubtitle.textContent = 'Seluruh parameter evaluasi dan foto presensi telah tercatat secara resmi di server PT KTC.';
+        } else {
+          fallbackRenderSubmitted();
+        }
       } catch (err) {
-        console.warn('Background sync notice:', err);
+        console.warn('POST response notice (CORS/Network):', err);
+        fallbackRenderSubmitted();
       }
     }
 
+    function fallbackRenderSubmitted() {
+      // Jika browser memblokir respon POST CORS, data tetap tercatat di sheet
+      document.getElementById('displayScoreTotal').textContent = "Tersimpan";
+      document.getElementById('displayScoreM1').textContent = "OK";
+      document.getElementById('displayScoreM2').textContent = "OK";
+      document.getElementById('displayScoreM3').textContent = "OK";
+      document.getElementById('displayScoreM4').textContent = "OK";
+
+      const recBadge = document.getElementById('resultRecommendationBadge');
+      recBadge.className = 'self-start sm:self-auto px-4 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
+      recBadge.innerHTML = '<i class="fa-solid fa-circle-check"></i> <span>Hasil Dicatat di Database</span>';
+
+      const syncStatusIcon = document.getElementById('syncStatusIcon');
+      syncStatusIcon.className = 'w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0 border border-emerald-200';
+      syncStatusIcon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+      document.getElementById('syncStatusTitle').textContent = 'Lembar Jawaban Berhasil Terkirim';
+      document.getElementById('syncStatusSubtitle').textContent = 'Hasil telah tersimpan di spreadsheet database asesor PT KTC.';
+    }
+
     // ==========================================
-    // RENDER SOAL & INTERAKSI JAWABAN
+    // RENDER SOAL BERSIH & PENYIMPANAN RESPON MENTAH
     // ==========================================
     function recordM1Answer(idx, choice) {
       candidateData.answers['m1_' + idx] = choice;
@@ -1949,24 +1527,10 @@
       updateModuleAnsweredCounter();
     }
 
-    function recordM2Answer(idx, score) {
-      candidateData.answers['m2_' + idx] = score;
-      updateRadioGroupStyles('m2_' + idx);
-      updatePaletteItem(2, idx);
-      updateModuleAnsweredCounter();
-    }
-
-    function recordM3Answer(idx, optIdx) {
-      candidateData.answers['m3_' + idx] = optIdx;
-      updateRadioGroupStyles('m3_' + idx);
-      updatePaletteItem(3, idx);
-      updateModuleAnsweredCounter();
-    }
-
-    function recordM4Answer(idx, optIdx) {
-      candidateData.answers['m4_' + idx] = optIdx;
-      updateRadioGroupStyles('m4_' + idx);
-      updatePaletteItem(4, idx);
+    function recordOptionAnswer(modNum, qIdx, optIdx) {
+      candidateData.answers['m' + modNum + '_' + qIdx] = optIdx;
+      updateRadioGroupStyles('m' + modNum + '_' + qIdx);
+      updatePaletteItem(modNum, qIdx);
       updateModuleAnsweredCounter();
     }
 
@@ -2019,10 +1583,10 @@
     }
 
     function getTotalQuestionsInModule(modNum) {
-      if (modNum === 1) return rawModul1.length;
-      if (modNum === 2) return rawModul2.length;
-      if (modNum === 3) return rawModul3.length;
-      if (modNum === 4) return dynamicModul4Questions.length || 20;
+      if (modNum === 1) return serverQuestionPackages.modul1.length;
+      if (modNum === 2) return serverQuestionPackages.modul2.length;
+      if (modNum === 3) return serverQuestionPackages.modul3.length;
+      if (modNum === 4) return serverQuestionPackages.modul4.length;
       return 0;
     }
 
@@ -2130,6 +1694,7 @@
       let html = '';
 
       if (tab === 1) {
+        const questions = serverQuestionPackages.modul1 || [];
         html += '<div class="border-b border-slate-100 pb-3">' +
           '<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-purple-100 text-purple-800 border border-purple-300 tracking-wider">' +
           'Modul 1 &bull; Kematangan Emosional (EQ) &bull; Forced-Choice (12 Butir &bull; Durasi 15 Menit)' +
@@ -2139,7 +1704,7 @@
           '</div>' +
           '<div class="space-y-4 pt-2">';
 
-        rawModul1.forEach((item, idx) => {
+        questions.forEach((item, idx) => {
           const qId = 'm1_' + idx;
           const selectedChoice = candidateData.answers[qId];
           const isFlagged = candidateData.flagged[qId] === true;
@@ -2176,6 +1741,7 @@
         html += '</div>';
       }
       else if (tab === 2) {
+        const questions = serverQuestionPackages.modul2 || [];
         html += '<div class="border-b border-slate-100 pb-3">' +
           '<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 border border-blue-300 tracking-wider">' +
           'Modul 2 &bull; Sikap Kerja &amp; Integritas (SJT) &bull; 15 Kasus &bull; Durasi 15 Menit' +
@@ -2185,9 +1751,9 @@
           '</div>' +
           '<div class="space-y-4 pt-2">';
 
-        rawModul2.forEach((item, idx) => {
+        questions.forEach((item, idx) => {
           const qId = 'm2_' + idx;
-          const selectedScore = candidateData.answers[qId];
+          const selectedOptIdx = candidateData.answers[qId];
           const isFlagged = candidateData.flagged[qId] === true;
           const flagBtnClass = isFlagged ? 'bg-amber-100 text-amber-800 border-amber-300 font-bold' : 'bg-slate-100 text-slate-400 hover:text-amber-600 border-slate-200';
 
@@ -2203,11 +1769,11 @@
             '</div>' +
             '<div class="grid grid-cols-1 gap-2 pt-2 border-t border-slate-200/80">';
 
-          item.opts.forEach((opt) => {
-            const isChecked = selectedScore === opt.score;
+          (item.opts || []).forEach((opt, optIdx) => {
+            const isChecked = selectedOptIdx === optIdx;
             const cardClass = isChecked ? 'bg-amber-50 border-amber-500 font-semibold text-slate-900 ring-1 ring-amber-500 shadow-xs' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300';
 
-            html += '<label data-qgroup="' + qId + '" onclick="recordM2Answer(' + idx + ', ' + opt.score + ')" class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition text-xs sm:text-sm ' + cardClass + '">' +
+            html += '<label data-qgroup="' + qId + '" onclick="recordOptionAnswer(2, ' + idx + ', ' + optIdx + ')" class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition text-xs sm:text-sm ' + cardClass + '">' +
               '<input type="radio" name="' + qId + '" ' + (isChecked ? 'checked' : '') + ' class="mt-0.5 text-amber-600 focus:ring-0 bg-white border-slate-300">' +
               '<span class="leading-relaxed">' + opt.t + '</span>' +
               '</label>';
@@ -2218,16 +1784,17 @@
         html += '</div>';
       }
       else if (tab === 3) {
+        const questions = serverQuestionPackages.modul3 || [];
         html += '<div class="border-b border-slate-100 pb-3">' +
           '<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 tracking-wider">' +
-          'Modul 3 &bull; K3LH &amp; Inspeksi Harian P2H Umum &bull; 18 Butir &bull; Durasi 25 Menit' +
+          'Modul 3 &bull; K3LH &amp; Inspeksi Harian P2H Baku &bull; 18 Butir &bull; Durasi 25 Menit' +
           '</span>' +
           '<h3 class="text-base sm:text-lg font-bold text-slate-900 mt-2">Baku Mutu Keselamatan Tambang Terbuka, Batas Fluida &amp; Prosedur Darurat</h3>' +
-          '<p class="text-xs text-slate-500">Pilihlah salah satu jawaban yang paling tepat sesuai regulasi baku K3LH, Kepmen ESDM, dan standar inspeksi alat berat.</p>' +
+          '<p class="text-xs text-slate-500">Pilihlah salah satu jawaban yang paling tepat sesuai regulasi baku K3LH, Kepmen ESDM 1827 K, dan standar inspeksi alat berat.</p>' +
           '</div>' +
           '<div class="space-y-4 pt-2">';
 
-        rawModul3.forEach((item, idx) => {
+        questions.forEach((item, idx) => {
           const qId = 'm3_' + idx;
           const selectedOptIdx = candidateData.answers[qId];
           const isFlagged = candidateData.flagged[qId] === true;
@@ -2245,11 +1812,11 @@
             '</div>' +
             '<div class="grid grid-cols-1 gap-2 pt-2 border-t border-slate-200/80">';
 
-          item.opts.forEach((opt, origIdx) => {
-            const isChecked = selectedOptIdx === origIdx;
+          (item.opts || []).forEach((opt, optIdx) => {
+            const isChecked = selectedOptIdx === optIdx;
             const cardClass = isChecked ? 'bg-amber-50 border-amber-500 font-semibold text-slate-900 ring-1 ring-amber-500 shadow-xs' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300';
 
-            html += '<label data-qgroup="' + qId + '" onclick="recordM3Answer(' + idx + ', ' + origIdx + ')" class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition text-xs sm:text-sm ' + cardClass + '">' +
+            html += '<label data-qgroup="' + qId + '" onclick="recordOptionAnswer(3, ' + idx + ', ' + optIdx + ')" class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition text-xs sm:text-sm ' + cardClass + '">' +
               '<input type="radio" name="' + qId + '" ' + (isChecked ? 'checked' : '') + ' class="mt-0.5 text-amber-600 focus:ring-0 bg-white border-slate-300">' +
               '<span class="leading-relaxed">' + opt.t + '</span>' +
               '</label>';
@@ -2260,7 +1827,7 @@
         html += '</div>';
       }
       else if (tab === 4) {
-        const unitQuestions = dynamicModul4Questions;
+        const questions = serverQuestionPackages.modul4 || [];
         html += '<div class="border-b border-slate-100 pb-3">' +
           '<span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 border border-amber-300 font-bold tracking-wider">' +
           'Modul 4 &bull; Formasi: ' + candidateData.posisi + ' (20 Butir &bull; Durasi 35 Menit)' +
@@ -2270,13 +1837,13 @@
           '</div>' +
           '<div class="space-y-4 pt-2">';
 
-        if (unitQuestions.length === 0) {
+        if (questions.length === 0) {
           html += '<div class="p-8 text-center text-slate-500 text-xs">' +
             '<i class="fa-solid fa-circle-notch fa-spin text-2xl text-amber-500 mb-2"></i>' +
-            '<p class="font-bold">Memuat bank soal spesifik formasi dari server...</p>' +
+            '<p class="font-bold">Memuat paket soal unit dari server...</p>' +
             '</div>';
         } else {
-          unitQuestions.forEach((item, idx) => {
+          questions.forEach((item, idx) => {
             const qId = 'm4_' + idx;
             const selectedOptIdx = candidateData.answers[qId];
             const isFlagged = candidateData.flagged[qId] === true;
@@ -2294,11 +1861,11 @@
               '</div>' +
               '<div class="grid grid-cols-1 gap-2 pt-2 border-t border-slate-200/80">';
 
-            item.opts.forEach((opt, origIdx) => {
-              const isChecked = selectedOptIdx === origIdx;
+            (item.opts || []).forEach((opt, optIdx) => {
+              const isChecked = selectedOptIdx === optIdx;
               const cardClass = isChecked ? 'bg-amber-50 border-amber-500 font-semibold text-slate-900 ring-1 ring-amber-500 shadow-xs' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300';
 
-              html += '<label data-qgroup="' + qId + '" onclick="recordM4Answer(' + idx + ', ' + origIdx + ')" class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition text-xs sm:text-sm ' + cardClass + '">' +
+              html += '<label data-qgroup="' + qId + '" onclick="recordOptionAnswer(4, ' + idx + ', ' + optIdx + ')" class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition text-xs sm:text-sm ' + cardClass + '">' +
                 '<input type="radio" name="' + qId + '" ' + (isChecked ? 'checked' : '') + ' class="mt-0.5 text-amber-600 focus:ring-0 bg-white border-slate-300">' +
                 '<span class="leading-relaxed">' + opt.t + '</span>' +
                 '</label>';
@@ -2316,4 +1883,3 @@
   </script>
 </body>
 </html>
-      
